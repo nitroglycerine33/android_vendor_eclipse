@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     start-ssh
 
 # themes
-include vendor/eclipse/config/theme_chooser.mk
+#include vendor/eclipse/config/theme_chooser.mk
 
 # overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/dictionaries
@@ -61,8 +61,8 @@ PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # etc
-PRODUCT_COPY_FILES += \
-    vendor/eclipse/prebuilt/common/etc/init.eclipse.rc:root/init.eclipse.rc
+#PRODUCT_COPY_FILES += \
+#    vendor/eclipse/prebuilt/common/etc/init.eclipse.rc:root/init.eclipse.rc
 
 # initd
 PRODUCT_COPY_FILES += \

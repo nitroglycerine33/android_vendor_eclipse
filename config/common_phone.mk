@@ -1,6 +1,3 @@
-# audio
-include frameworks/base/data/sounds/NewAudio.mk
-
 # common
 $(call inherit-product, vendor/eclipse/config/common.mk)
 
