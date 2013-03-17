@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     LockClock \
-    PerformanceControl \
     Superuser
 
 # tools
