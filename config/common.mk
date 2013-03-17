@@ -18,11 +18,11 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
     LiveWallpapers \
-    Launcher2 \
     LiveWallpapersPicker \
     NoiseField \
     PhaseBeam \
     Torch \
+    Trebuchet \
     Wallpapers
 
 # prebuilts
