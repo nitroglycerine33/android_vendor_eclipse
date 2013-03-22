@@ -15,6 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # packages
 PRODUCT_PACKAGES += \
     Camera \
+    FileManager \
     Galaxy4 \
     HoloSpiralWallpaper \
     LiveWallpapers \
