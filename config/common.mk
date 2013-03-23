@@ -84,3 +84,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/eclipse/config/permissions/com.eclipse.android.xml:system/etc/permissions/com.eclipse.android.xml \
     vendor/eclipse/config/permissions/com.eclipse.nfc.enhanced.xml:system/etc/permissions/com.eclipse.nfc.enhanced.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+  ro.elemental.version=1.0
