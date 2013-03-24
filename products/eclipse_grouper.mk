@@ -45,3 +45,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/media/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/grouper
