@@ -1,3 +1,5 @@
+SUPERUSER_EMBEDDED := true
+
 # brand
 PRODUCT_BRAND ?= Eclipse
 
@@ -25,6 +27,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     NoiseField \
     PhaseBeam \
+    Superuser \
+    su \
     Torch \
     Trebuchet \
     Wallpapers
@@ -35,8 +39,7 @@ PRODUCT_PACKAGES += \
 # prebuilts
 PRODUCT_PACKAGES += \
     LatinIME \
-    LockClock \
-    Superuser
+    LockClock
 
 # tools
 PRODUCT_PACKAGES += \
@@ -98,7 +101,6 @@ PRODUCT_COPY_FILES += \
 
 # prebuilt
 PRODUCT_COPY_FILES += \
-    vendor/eclipse/prebuilt/common/xbin/su:system/xbin/su \
     vendor/eclipse/prebuilt/common/xbin/sysro:system/xbin/sysro \
     vendor/eclipse/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/eclipse/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
