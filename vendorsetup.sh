@@ -10,4 +10,5 @@ add_lunch_combo eclipse_targa-userdebug
 add_lunch_combo eclipse_toro-userdebug
 add_lunch_combo eclipse_t0tlte-userdebug
 add_lunch_combo eclipse_xt907-userdebug
+add_lunch_combo eclipse_xt925-userdebug
 add_lunch_combo eclipse_xt926-userdebug

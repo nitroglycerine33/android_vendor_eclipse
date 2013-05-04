@@ -11,4 +11,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/eclipse_toro.mk \
     $(LOCAL_DIR)/eclipse_t0tlte.mk \
     $(LOCAL_DIR)/eclipse_xt907.mk \
+    $(LOCAL_DIR)/eclipse_xt925.mk \
     $(LOCAL_DIR)/eclipse_xt926.mk \
