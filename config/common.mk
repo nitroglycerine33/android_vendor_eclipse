@@ -1,7 +1,17 @@
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 # brand
 PRODUCT_BRAND ?= Eclipse
+
+# Bring in all audio files
+include frameworks/base/data/sounds/NewAudio.mk
+
+# Extra Ringtones
+include frameworks/base/data/sounds/AudioPackageNewWave.mk
+
+# Bring in all video files
+$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # overrides
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -12,7 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    ro.eclipse.version=5.0-build-1
 
 # packages
 PRODUCT_PACKAGES += \
@@ -65,6 +76,10 @@ include vendor/eclipse/config/theme_chooser.mk
 # overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/common
+
+# Eclipse-specific changelog
+PRODUCT_COPY_FILES += \
+    vendor/eclipse/prebuilt/common/etc/CHANGELOG-ECLIPSE.txt:system/etc/CHANGELOG-ECLIPSE.txt
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -119,5 +134,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.elemental.version=1.0

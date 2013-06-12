@@ -26,6 +26,9 @@ $(call inherit-product, vendor/eclipse/config/common_cdma.mk)
 # phone
 $(call inherit-product, vendor/eclipse/config/common_phone.mk)
 
+# softkeys
+$(call inherit-product, vendor/eclipse/config/commonsoftkeys.mk)
+
 # products
 PRODUCT_DEVICE := toro
 PRODUCT_BRAND := Google

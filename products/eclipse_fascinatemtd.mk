@@ -24,5 +24,5 @@ TARGET_SCREEN_WIDTH := 480
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I500 TARGET_DEVICE=SCH-I500 BUILD_FINGERPRINT=verizon/SCH-I500/SCH-I500:2.3.5/GINGERBREAD/EI20:user/release-keys PRIVATE_BUILD_DESC="SCH-I500-user 2.3.5 GINGERBREAD EI20 release-keys"
 
 PRODUCT_COPY_FILES += \
-    vendor/eclipse/prebuilt/common/media/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/eclipse/prebuilt/common/media/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
