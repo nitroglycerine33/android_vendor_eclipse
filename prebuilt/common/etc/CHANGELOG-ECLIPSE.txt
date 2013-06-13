@@ -1,1 +1,10 @@
-v1.0 Cool Stuff 
+build 2
+Fixes to bluetooth
+Merged in changes from razrqcom team to fix the camcorder on Razr HD/M
+Fixed up telephony force closes on some devices
+Merged in new d2 and note2 hardware changes from CM
+Replaced talk lockscreen slider shortcut icons with hangouts icons
+Lockscreen - hide initial page hints
+
+build 1
+Initial release of Eclipse v5.0 (E5)
