@@ -5,6 +5,7 @@ Fixed up telephony force closes on some devices
 Merged in new d2 and note2 hardware changes from CM
 Replaced talk lockscreen slider shortcut icons with hangouts icons
 Lockscreen - hide initial page hints
+Updated LG Spectrum kernel
 
 build 1
 Initial release of Eclipse v5.0 (E5)
