@@ -1,7 +1,7 @@
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/cdma.mk
+$(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
@@ -13,7 +13,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUI
 
 PRODUCT_NAME := eclipse_jfltevzw
 PRODUCT_DEVICE := jfltevzw
-
-PRODUCT_COPY_FILES += \
-    vendor/eclipse/prebuilt/common/media/xhdpi/bootanimation.zip:system/media/bootanimation.zip
 
