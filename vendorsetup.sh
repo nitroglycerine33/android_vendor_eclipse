@@ -3,6 +3,7 @@ add_lunch_combo eclipse_d2vzw-userdebug
 add_lunch_combo eclipse_fascinatemtd-userdebug
 add_lunch_combo eclipse_grouper-userdebug
 add_lunch_combo eclipse_jfltevzw-userdebug
+add_lunch_combo eclipse_mako-userdebug
 add_lunch_combo eclipse_maguro-userdebug
 add_lunch_combo eclipse_manta-userdebug
 add_lunch_combo eclipse_maserati-userdebug
