@@ -23,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    ro.eclipse.version=5.0-build-3
+    ro.eclipse.version=Eclipse-v5.0-build-3
 
 # packages
 PRODUCT_PACKAGES += \

@@ -77,17 +77,11 @@ $SED -i \
 # Delete unnecessary libraries
 ( cd $REPACK/ota/system/lib; echo $DELETE_LIBS | xargs rm -f; )
 
-# Delete Offline charging mode files
-( cd $REPACK/ota/system/media; echo $DELETE_MEDIA | xargs rm -f; )
-
 # No need for modem.bin
 rm -f $REPACK/ota/modem.bin
 
 # No need for media/video
 rm -rf $REPACK/ota/system/media/video
-
-# Delete Unnecessary Fonts
-( cd $REPACK/ota/system/fonts; echo $DELETE_FONTS | xargs rm -f; )
 
 # No need for tts
 rm -rf $REPACK/ota/system/tts
@@ -103,12 +97,10 @@ rm -rf $REPACK/ota/system/etc/recovery-resource.dat
 rm -rf $REPACK/ota/system/framework/send_bug.jar
 rm -rf $REPACK/ota/system/bin/bugmailer.sh
 
-# Strip modules
-[ -d $REPACK/ota/system/lib/modules ] && \
-	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
-
 # Determine what to name the new signed package
-OUTFILE=$OUT/ElementalX-.zip
+MODVERSION=`sed -n -e'/ro\.eclipse\.version/s/^.*=//p' $OUT/system/build.prop`
+DEVICETYPE=`sed -n -e'/ro\.product\.device/s/^.*=//p' $OUT/system/build.prop`
+OUTFILE=$OUT/$MODVERSION-$DEVICETYPE.zip
 
 # Pack it up and sign
 printf "Zipping package..."
