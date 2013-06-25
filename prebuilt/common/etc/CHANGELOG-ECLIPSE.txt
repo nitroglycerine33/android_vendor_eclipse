@@ -1,3 +1,19 @@
+build 3
+Add bluetooth and wireless AP options to Profiles
+Fix pie controls
+Cleanup Nav ring hotseats
+Add CM's Privacy guard
+Add CM's calculator
+Updated several Samsung device trees (Note2, S3, S4, fascinate)
+Updated Spectrum kernel
+Fix theme engine for multi-profiles
+Fix mobile data toggle
+Fix battery observer reporting "unknown" when changing quick tiles
+Several multi-user fixes
+Navigation bar code cleanup
+Notification panel optimizations
+Added framework support for HTC One (all you need to add are device and vendor files from CM to build)
+
 build 2
 Fixes to bluetooth
 Merged in changes from razrqcom team to fix the camcorder on Razr HD/M
