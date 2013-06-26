@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     NoiseField \
+    PermissionsManager \
     PhaseBeam \
     Superuser \
     su \
