@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     NoiseField \
     PermissionsManager \
     PhaseBeam \
+    SunBeam \
     Superuser \
     su \
     Torch \
