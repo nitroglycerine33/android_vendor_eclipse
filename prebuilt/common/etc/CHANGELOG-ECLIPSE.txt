@@ -6,6 +6,10 @@ Add CM's Privacy guard
 Add CM's calculator
 Updated several Samsung device trees (Note2, S3, S4, fascinate)
 Updated Spectrum kernel
+Updated d2 kernel (S3)
+Updated jflte kernel (S4)
+Updated Razr Q-Com kernel (HD, M)
+Webkit browser enhancements
 Fix theme engine for multi-profiles
 Fix mobile data toggle
 Fix battery observer reporting "unknown" when changing quick tiles
@@ -13,6 +17,10 @@ Several multi-user fixes
 Navigation bar code cleanup
 Notification panel optimizations
 Added framework support for HTC One (all you need to add are device and vendor files from CM to build)
+Add MIUI battery bar status bar option
+Add battery text status bat option
+Permissions manager to modify and apps permissions (revoke permissions if desired)
+Allow devices with 1.5gb+ of ram to allow more hidden apps
 
 build 2
 Fixes to bluetooth
