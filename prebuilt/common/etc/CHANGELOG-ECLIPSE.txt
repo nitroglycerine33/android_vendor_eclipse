@@ -23,6 +23,7 @@ Permissions manager to modify and apps permissions (revoke permissions if desire
 Allow devices with 1.5gb+ of ram to allow more hidden apps
 Add SunBeam wallpaper
 Update dalvik
+HDR video recording
 
 build 2
 Fixes to bluetooth
