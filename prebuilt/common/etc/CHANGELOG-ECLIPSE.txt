@@ -21,6 +21,8 @@ Add MIUI battery bar status bar option
 Add battery text status bat option
 Permissions manager to modify and apps permissions (revoke permissions if desired)
 Allow devices with 1.5gb+ of ram to allow more hidden apps
+Add SunBeam wallpaper
+Update dalvik
 
 build 2
 Fixes to bluetooth
