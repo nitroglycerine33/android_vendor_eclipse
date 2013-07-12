@@ -24,6 +24,12 @@ Allow devices with 1.5gb+ of ram to allow more hidden apps
 Add SunBeam wallpaper
 Update dalvik
 HDR video recording
+Add Privacy guard manager
+Ability to enable/disable lockscreen rotations
+Add SMS middleware for future Google Voice features
+Ability to rescan media on the fly
+Contacts app overhaul and new privacy features
+Multiple framework bug fixes
 
 build 2
 Fixes to bluetooth
