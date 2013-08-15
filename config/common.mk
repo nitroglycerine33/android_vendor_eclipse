@@ -1,5 +1,8 @@
 PRODUCT_BRAND ?= eclipse
 
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -13,7 +16,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    persist.sys.root_access=1
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
@@ -35,6 +39,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/bin/sysinit:system/bin/sysinit 
 
+# CM-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/eclipse/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+
 # userinit support
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
@@ -42,10 +50,6 @@ PRODUCT_COPY_FILES += \
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
-
-# CM-specific init file
-#PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
@@ -70,10 +74,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is CM!
-PRODUCT_COPY_FILES += \
-    vendor/eclipse/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
-
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/etc/mkshrc:system/etc/mkshrc
@@ -83,11 +83,10 @@ PRODUCT_COPY_FILES += \
 
 # Required Eclipse packages
 PRODUCT_PACKAGES += \
-#    Focal \
-#    Development \
+    Focal \
     LatinIME \
-#    Superuser \
-#    su
+    Superuser \
+    su
 
 # Optional Eclipse packages
 PRODUCT_PACKAGES += \
