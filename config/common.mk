@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     VideoEditor \
     VoiceDialer \
+    SunBeam \
     SoundRecorder \
     Basic
 
