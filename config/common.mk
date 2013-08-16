@@ -98,20 +98,16 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-#    Trebuchet \
-#    DSPManager \
-#    libcyanogen-dsp \
-#    audio_effects.conf \
-#    CMWallpapers \
-#    Apollo \
-#    CMUpdater \
-#    CMFileManager \
-#    LockClock
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf \
+    CMFileManager \
+    LockClock
 
 # CM Hardware Abstraction Framework
-#PRODUCT_PACKAGES += \
-#    org.cyanogenmod.hardware \
-#    org.cyanogenmod.hardware.xml
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
