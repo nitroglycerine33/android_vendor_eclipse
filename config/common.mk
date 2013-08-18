@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # T-Mobile theme engine
-#include vendor/cm/config/themes_common.mk
+include vendor/eclipse/config/themes_common.mk
 
 # Required Eclipse packages
 PRODUCT_PACKAGES += \
