@@ -9,6 +9,10 @@ $(call inherit-product, vendor/eclipse/config/nfc_enhanced.mk)
 # Inherit some common Eclipse stuff.
 $(call inherit-product, vendor/eclipse/config/common_full_phone.mk)
 
+# Terminal Emulator
+PRODUCT_COPY_FILES +=  \
+    vendor/eclipse/proprietary/Gallery2.apk:system/app/Gallery2.apk \
+
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUILD_FINGERPRINT="Verizon/jfltevzw/jfltevzw:4.2.2/JDQ39/I545VRUAMDK:user/release-keys" PRIVATE_BUILD_DESC="jfltevzw-user 4.2.2 JDQ39 I545VRUAMDK release-keys"
 
 PRODUCT_NAME := eclipse_jfltevzw
