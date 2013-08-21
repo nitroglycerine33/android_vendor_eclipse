@@ -61,6 +61,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/eclipse/proprietary/Term.apk:system/app/Term.apk \
     vendor/eclipse/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
+# Prebuilt SunBeam live wallpaper
+PRODUCT_COPY_FILES +=  \
+    vendor/eclipse/proprietary/SunBeam.apk:system/app/SunBeam.apk \
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/eclipse/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
@@ -83,7 +87,6 @@ include vendor/eclipse/config/themes_common.mk
 
 # Required Eclipse packages
 PRODUCT_PACKAGES += \
-    Focal \
     LatinIME \
     Superuser \
     su
@@ -93,7 +96,6 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     VideoEditor \
     VoiceDialer \
-    SunBeam \
     SoundRecorder \
     Basic
 
