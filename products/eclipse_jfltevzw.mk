@@ -18,3 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUI
 PRODUCT_NAME := eclipse_jfltevzw
 PRODUCT_DEVICE := jfltevzw
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/samsung
