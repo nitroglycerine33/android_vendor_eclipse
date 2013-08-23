@@ -9,6 +9,9 @@ $(call inherit-product, vendor/eclipse/config/nfc_enhanced.mk)
 # Inherit some common Eclipse stuff.
 $(call inherit-product, vendor/eclipse/config/common_full_phone.mk)
 
+# Inherit torch
+$(call inherit-product, vendor/eclipse/config/torch.mk)
+
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
     vendor/eclipse/proprietary/Gallery2.apk:system/app/Gallery2.apk \
