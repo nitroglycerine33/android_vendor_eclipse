@@ -8,8 +8,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Hassium.ogg
 
 PRODUCT_PACKAGES += \
-  Mms \
-  Stk
+    Focal \
+    Mms \
+    Stk
 
 # BT config
 PRODUCT_COPY_FILES += \
