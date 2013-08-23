@@ -8,7 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Hassium.ogg
 
 PRODUCT_PACKAGES += \
-    Focal \
     Mms \
     Stk
 
