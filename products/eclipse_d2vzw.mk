@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
+$(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 # Inherit some common Eclipse stuff.
 $(call inherit-product, vendor/eclipse/config/cdma.mk)
@@ -16,9 +16,9 @@ $(call inherit-product, vendor/eclipse/config/torch.mk)
 PRODUCT_COPY_FILES +=  \
     vendor/eclipse/proprietary/Gallery2.apk:system/app/Gallery2.apk \
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUILD_FINGERPRINT="Verizon/jfltevzw/jfltevzw:4.2.2/JDQ39/I545VRUAMDK:user/release-keys" PRIVATE_BUILD_DESC="jfltevzw-user 4.2.2 JDQ39 I545VRUAMDK release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2vzw TARGET_DEVICE=d2vzw BUILD_FINGERPRINT="Verizon/d2vzw/d2vzw:4.1.2/JZO54K/I535VRBMF1:user/release-keys" PRIVATE_BUILD_DESC="d2vzw-user 4.1.2 JZO54K I535VRBMF1 release-keys"
 
-PRODUCT_NAME := eclipse_jfltevzw
-PRODUCT_DEVICE := jfltevzw
+PRODUCT_NAME := eclipse_d2vzw
+PRODUCT_DEVICE := d2vzw
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/eclipse/overlay/samsung

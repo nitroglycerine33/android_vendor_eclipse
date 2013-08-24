@@ -1,1 +1,3 @@
+add_lunch_combo eclipse_d2spr-userdebug
+add_lunch_combo eclipse_d2vzw-userdebug
 add_lunch_combo eclipse_jfltevzw-userdebug
