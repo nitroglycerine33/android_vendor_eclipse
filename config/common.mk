@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMFileManager \
-    LockClock
+    LockClock \
+    Trebuchet
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
