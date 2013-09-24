@@ -94,6 +94,7 @@ PRODUCT_PACKAGES += \
 # Optional Eclipse packages
 PRODUCT_PACKAGES += \
     VoicePlus \
+    MusicFX \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
