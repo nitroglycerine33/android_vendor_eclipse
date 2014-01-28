@@ -13,6 +13,9 @@
 # limitations under the License.
 
 
-ifeq (oct_jfltevzw,$(TARGET_PRODUCT))
+ifeq (eclipse_jfltevzw,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/eclipse_jfltevzw.mk
+endif
+ifeq (eclipse_xt1060,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/eclipse_xt1060.mk
 endif

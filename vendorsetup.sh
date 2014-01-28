@@ -1,1 +1,2 @@
 add_lunch_combo eclipse_jfltevzw-userdebug
+add_lunch_combo eclipse_xt1060-userdebug
