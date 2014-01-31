@@ -25,6 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=1
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
