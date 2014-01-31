@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
+
 # Google property overides
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -26,6 +29,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/eclipse/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/eclipse/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
+
+# Required Eclipse packages
+PRODUCT_PACKAGES += \
+    Superuser \
+    su
+
+# Eclipse-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/eclipse/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
